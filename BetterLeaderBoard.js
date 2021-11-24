@@ -2,7 +2,7 @@
 // @name         SR.C Better Leaderboard
 // @namespace    https://github.com/YummyBacon5
 // @version      1.0.0
-// @description  This shows all hidden variables, removes the sub-category dropdowns and display all the categories at once!
+// @description  This UserScript for Speedrun.com removes all the sub-category dropdowns, shows all of the hidden variables and displays all the categories at once!
 // @author       Yummy_Bacon5
 // @match        https://www.speedrun.com/*
 // @icon         https://drive.google.com/uc?id=1evLQo0tDq48SnI_tLlXEeofU_kQ5Mcbd&export=download
@@ -68,11 +68,13 @@
     //Checks if the miscellaneous tab is null to not cause erros
     const miscElement = document.getElementById("miscellaneous")
     if(miscElement) {
+        miscElement.style["text-transform"] = "none"
         miscElement.style.display = "block"
     }
     //Displays all the categories in the old style
     const catElements = getElementsStartsWithId("category")
     for(let i = 0; i < catElements.length; i++) {
+        catElements[i].style["text-transform"] = "none"
         catElements[i].style.display = "block"
     }
     //Removes the category arrows
