@@ -7,8 +7,8 @@
 // @match        https://www.speedrun.com/*
 // @icon         https://drive.google.com/uc?id=1evLQo0tDq48SnI_tLlXEeofU_kQ5Mcbd&export=download
 // @homepageURL  https://github.com/YummyBacon5/SR.C-Better-Leaderboard
-// @downloadURL  
-// @updateURL    
+// @downloadURL  https://github.com/YummyBacon5/SR.C-Better-Leaderboard/raw/main/BetterLeaderBoard.js
+// @updateURL    https://github.com/YummyBacon5/SR.C-Better-Leaderboard/raw/main/BetterLeaderBoard.js
 // ==/UserScript==
 
 (function() {
